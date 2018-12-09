@@ -64,3 +64,32 @@ func main() {
 	fmt.Printf("%+v\n", j)
 }
 ```
+
+## Check string if valid IP format or not
+
+```go
+package main
+
+import (
+	"fmt"
+	"regexp"
+
+	"net"
+)
+
+func main() {
+	ip := "10.1.3.2"
+
+	validIP := regexp.MustCompile(`^[1-9][0-9]{1,3}\.[0-9]{1,4}\.[0-9]{1,4}\.[0-9]{1,4}`) // \b and \d are also available.
+	fmt.Printf("%+v\n", validIP.MatchString(ip))
+
+	// This is also possible, but To4() does not care some IP like 0.1.2.3
+	ipaddr := net.ParseIP(ip)
+	if ipaddr.To4() == nil {
+		fmt.Printf("false") // output for debug
+	} else {
+		fmt.Printf("true") // output for debuga
+	}
+
+}
+```

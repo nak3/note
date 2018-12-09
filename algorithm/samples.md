@@ -80,5 +80,49 @@ func main() {
 }
 ```
 
+## sort map
+
+This is different from C++. [blog.golang.org](https://blog.golang.org/go-maps-in-action#TOC_7.) is the reference.
+
+```
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func main() {
+	mp := map[int]string{1: "a", 3: "c", 2: "b"}
+	var keys []int
+	for k, _ := range mp {
+		keys = append(keys, k)
+	}
+
+	sort.Ints(keys)
+	for _, k := range keys {
+		fmt.Printf("%+v ", mp[k]) // output for debug
+	}
+}
+```
 
 ## sort with codition
+
+## dynamic programming
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	n := 9
+	dp := make([]int, n+1)
+	dp[0] = 0
+	dp[1] = 1
+	for i := 2; i <= n; i++ {
+		dp[i] = dp[i-2] + dp[i-1]
+	}
+	fmt.Printf("%+v\n", dp[n])
+}
+```

@@ -22,3 +22,25 @@ network, hosts, subnet mask, and so on.
 
 - When CIDR is `/24`, subnet mask is 255.255.255.0. Total IPs are `2^8 = 256`. `254 (=256-2)` are available IPs. -2 is from Broadcast IP and network IP.
 - When CIDR is `/16`, subnet mask is 255.255.0.0. Total IPs are `2^16 = 256*256`. `65534 (=65536-2)` are available IPs.
+
+
+
+## TCP basic
+
+### connection establishment
+
+- 3 way handshake, used SYN, SYN+ACK, ACK packets
+
+- A server becomes Listen status and waits for open request from a client. The server must bind to and listen at port to open it up for connections (passive open). The client initiates the connection.
+
+This picture is from [wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment)
+
+![tcp establishment](/images/Tcp_state_diagram_fixed_new.svg)
+
+
+### Basic feature of TCP
+
+- sequence number
+- retransmission
+- flow control
+- Window scaling

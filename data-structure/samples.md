@@ -180,5 +180,69 @@ func main() {
 ```
 
 ## tree
+
+```go
+package main
+
+import "fmt"
+
+type Tree struct {
+	data  int
+	left  *Tree
+	right *Tree
+}
+
+func preorder(t *Tree) {
+	if t == nil {
+		return
+	}
+	fmt.Printf("%v ", t.data)
+	preorder(t.left)
+	preorder(t.right)
+
+}
+
+func postorder(t *Tree) {
+	if t == nil {
+		return
+	}
+	postorder(t.left)
+	postorder(t.right)
+	fmt.Printf("%v ", t.data)
+}
+
+func inorder(t *Tree) {
+	if t == nil {
+		return
+	}
+	inorder(t.left)
+	fmt.Printf("%v ", t.data)
+	inorder(t.right)
+}
+
+/*
+      0
+    1   2
+  3  4   5
+*/
+
+func main() {
+	five := &Tree{5, nil, nil}
+	four := &Tree{4, nil, nil}
+	three := &Tree{3, nil, nil}
+	two := &Tree{2, nil, five}
+	one := &Tree{1, three, four}
+	zero := &Tree{0, one, two}
+	fmt.Printf("preorder: ")
+	preorder(zero)
+	fmt.Printf("\n")
+	fmt.Printf("postorder: ")
+	postorder(zero)
+	fmt.Printf("\n")
+	fmt.Printf("inorder: ")
+	inorder(zero)
+}
+```
+
 ## graph (djacency matrix)
 ## graph (incidence matrix)

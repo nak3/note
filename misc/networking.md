@@ -1,4 +1,4 @@
-memo
+note related to networking
 ---
 
 ## DNS record
@@ -40,7 +40,9 @@ This picture is from [wikipedia](https://en.wikipedia.org/wiki/Transmission_Cont
 
 ### Basic feature of TCP
 
-- sequence number
-- retransmission
-- flow control
-- Window scaling
+- sequence number ... sequence number achieves ordered data transfer. The destination host rearranges based on the sequence number
+- retransmission ... any cumulative stream not acknowledged is retransmitted.
+- flow control ... flow control is achieved by increasing or decreasing the window size depends on the buffer size.
+- Window scaling ... window scaling uses windows size. Windows size lets the peer know the data size how much the peer can send wihtout ACK.
+
+## SSL

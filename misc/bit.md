@@ -16,3 +16,31 @@ func main() {
 	}
 }
 ```
+
+## List all subsets
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	subsets([]int{1, 2, 3})
+}
+
+func subsets(nums []int) [][]int {
+	for i := 0; i < (1 << uint(len(nums))); i++ {
+		fmt.Printf("[") // output for debug
+
+		for j := uint(0); j < uint(len(nums)); j++ {
+			if (i & (1 << j)) > 0 {
+				fmt.Printf("%v", nums[j])
+			}
+		}
+		fmt.Printf("]\n") // output for debug
+	}
+	return [][]int{}
+}
+```

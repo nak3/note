@@ -1,2 +1,2 @@
 # note
-My lerarning space
+My learning space

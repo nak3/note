@@ -127,8 +127,105 @@ func main() {
 }
 ```
 
-## DFS
+## DFS, BFS, level order traveral (Tree)
 
-## BFS
+```go
+package main
 
-## level order traveral (Tree)
+import (
+	"fmt"
+	"math/rand"
+)
+
+type Tree struct {
+	Val   int
+	Left  *Tree
+	Right *Tree
+}
+
+func New(n, k int) *Tree {
+	var t *Tree
+	for _, v := range rand.Perm(n) {
+		t = insert(t, (1+v)*k)
+	}
+	return t
+}
+
+func insert(t *Tree, v int) *Tree {
+	if t == nil {
+		return &Tree{v, nil, nil}
+	}
+	if v < t.Val {
+		t.Left = insert(t.Left, v)
+		return t
+	}
+	t.Right = insert(t.Right, v)
+	return t
+}
+
+func dfs(root *Tree) {
+	if root == nil {
+		return
+	}
+	fmt.Printf("%+v ", root.Val) // output for debug
+	dfs(root.Left)
+	dfs(root.Right)
+}
+
+func bfs(root *Tree) {
+	if root == nil {
+		return
+	}
+	q := []*Tree{root}
+	for {
+		if len(q) == 0 {
+			break
+		}
+		tmp := q[0]
+		fmt.Printf("%v ", tmp.Val)
+		if tmp.Left != nil {
+			q = append(q, tmp.Left)
+		}
+		if tmp.Right != nil {
+			q = append(q, tmp.Right)
+		}
+		q = q[1:]
+	}
+}
+
+func levelOrder(root *Tree) {
+	if root == nil {
+		return
+	}
+	q := []*Tree{root}
+	for {
+		if len(q) == 0 {
+			break
+		}
+		size := len(q)
+		for i := 0; i < size; i++ {
+			tmp := q[0]
+			fmt.Printf("%v ", tmp.Val)
+			if tmp.Left != nil {
+				q = append(q, tmp.Left)
+			}
+			if tmp.Right != nil {
+				q = append(q, tmp.Right)
+			}
+			q = q[1:]
+		}
+		fmt.Printf("\n")
+	}
+}
+
+func main() {
+	fmt.Printf("hello, world\n")
+	t1 := New(10, 1)
+	fmt.Printf("\nDFS:")
+	dfs(t1)
+	fmt.Printf("\nBFS:")
+	bfs(t1)
+	fmt.Printf("\nLevel:\n")
+	levelOrder(t1)
+}
+```

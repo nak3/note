@@ -247,7 +247,7 @@ func main() {
 }
 ```
 
-### 11. 
+### 11. Replace tab with space
 
 ```go
 package main
@@ -342,7 +342,86 @@ func main() {
 
 ### 14. First N lines
 
+```go
+package main
+
+import (
+	"fmt"
+	"bufio"
+	"flag"
+	"os"
+	"strconv"
+)
+
+func main() {
+	flag.Parse()
+	args := flag.Args()
+	if len(args) != 1 {
+		//
+	}
+	n, _ := strconv.Atoi(args[0])
+
+	f, err := os.Open("hightemp.txt")
+	if err != nil {
+		//
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+
+	idx := 0
+	for scanner.Scan() {
+		if idx == n {
+			break
+		}
+
+		str := scanner.Text()
+		fmt.Printf("%+v\n", str) // output for debug
+		idx += 1
+	}
+}
+```
+
 ### 15. Last N lines
+
+NOTE: This code does not work if big file data due to out of memory.
+
+```go
+package main
+
+import (
+	"fmt"
+	"bufio"
+	"flag"
+	"os"
+	"strconv"
+)
+
+func main() {
+	flag.Parse()
+	args := flag.Args()
+	if len(args) != 1 {
+		//
+	}
+	n, _ := strconv.Atoi(args[0])
+
+	f, err := os.Open("hightemp.txt")
+	if err != nil {
+		//
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+
+	var lines []string
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
+	}
+	for i := len(lines) - n; i < len(lines); i++ {
+		fmt.Printf("%+v\n", lines[i]) // output for debug
+	}
+}
+```
 
 ### (Optional) 10-19 by Linux commands
 

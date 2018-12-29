@@ -82,3 +82,19 @@ func Test_startend(t *testing.T) {
 		ast.Equal(tc.exp, regex_startend(tc.str), "diff:%v", tc)
 	}
 }
+
+var tcs6 = []struct {
+	str string
+	exp bool
+}{
+	{"11x3x.", true},
+	{"41x3x.", false},
+	{"41x3x2.", false},
+}
+
+func Test_specific(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs6 {
+		ast.Equal(tc.exp, regex_specific(tc.str), "diff:%v", tc)
+	}
+}

@@ -1,1 +1,4 @@
-https://practice.geeksforgeeks.org/problems/implement-atoi/1
+- [atoi](https://practice.geeksforgeeks.org/problems/implement-atoi/1)
+- [regex](https://www.hackerrank.com/domains/regex)
+- [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+- [awk2](https://www.hackerrank.com/challenges/awk-2/problem)

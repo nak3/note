@@ -33,3 +33,9 @@ func regex_startend(str string) bool {
 	valid := regexp.MustCompile(`^\d\w{4}\.$`)
 	return valid.MatchString(str)
 }
+
+// https://www.hackerrank.com/challenges/matching-specific-characters/problem
+func regex_specific(str string) bool {
+	valid := regexp.MustCompile(`^[1-3][0-2][xs0][30Aa][xsu][.,]$`)
+	return valid.MatchString(str)
+}

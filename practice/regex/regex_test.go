@@ -36,3 +36,49 @@ func Test_fn2(t *testing.T) {
 		ast.Equal(tc.exp, regex2(tc.str), "diff:%v", tc)
 	}
 }
+
+var tcs3 = []struct {
+	str string
+	exp bool
+}{
+	{"12 34 56", true},
+	{"1234567890", false},
+}
+
+func Test_whitespace(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs3 {
+		ast.Equal(tc.exp, regex_whitespace(tc.str), "diff:%v", tc)
+	}
+}
+
+var tcs4 = []struct {
+	str string
+	exp bool
+}{
+	{"abc#defghijklm$nop", true},
+	{"abcdefghijklmnopq", false},
+}
+
+func Test_word(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs4 {
+		ast.Equal(tc.exp, regex_word(tc.str), "diff:%v", tc)
+	}
+}
+
+var tcs5 = []struct {
+	str string
+	exp bool
+}{
+	{"1abcd.", true},
+	{"abcde.", false},
+	{"2abcde", false},
+}
+
+func Test_startend(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs5 {
+		ast.Equal(tc.exp, regex_startend(tc.str), "diff:%v", tc)
+	}
+}

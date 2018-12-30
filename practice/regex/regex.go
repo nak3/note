@@ -39,3 +39,9 @@ func regex_specific(str string) bool {
 	valid := regexp.MustCompile(`^[1-3][0-2][xs0][30Aa][xsu][.,]$`)
 	return valid.MatchString(str)
 }
+
+// https://www.hackerrank.com/challenges/excluding-specific-characters/problem
+func regex_notspecific(str string) bool {
+	valid := regexp.MustCompile(`\D[^aeiou][^bcDF]\S[^AEIOU][^.,]$`)
+	return valid.MatchString(str)
+}

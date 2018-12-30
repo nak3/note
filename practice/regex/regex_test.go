@@ -98,3 +98,24 @@ func Test_specific(t *testing.T) {
 		ast.Equal(tc.exp, regex_specific(tc.str), "diff:%v", tc)
 	}
 }
+
+var tcs7 = []struct {
+	str string
+	exp bool
+}{
+	{"A1A1aO", true},
+	{"think?", true},
+	{"1hink?", false},
+	{"taink?", false},
+	{"thbnk?", false},
+	{"thi\nk?", false},
+	{"thinA?", false},
+	{"thinA.", false},
+}
+
+func Test_notspecific(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs7 {
+		ast.Equal(tc.exp, regex_notspecific(tc.str), "diff:%v", tc)
+	}
+}

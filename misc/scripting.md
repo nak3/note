@@ -30,3 +30,9 @@ L=$(awk {'print $1'} <<< $RANGE)
 R=$(awk {'print $2'} <<< $RANGE)
 cat input | head -n $R | tail -n $((R-L+1))
 ```
+
+[sed](https://www.hackerrank.com/challenges/text-processing-in-linux-the-sed-command-3/problem)
+
+```bash
+sed -e "s/thy/{&}/ig"
+```

@@ -45,3 +45,15 @@ func regex_notspecific(str string) bool {
 	valid := regexp.MustCompile(`\D[^aeiou][^bcDF]\S[^AEIOU][^.,]$`)
 	return valid.MatchString(str)
 }
+
+// https://www.hackerrank.com/challenges/matching-range-of-characters/problem
+func regex_range(str string) bool {
+	valid := regexp.MustCompile(`[a-z][1-9][^a-z][^A-Z][A-Z]$`)
+	return valid.MatchString(str)
+}
+
+// https://www.hackerrank.com/challenges/matching-x-repetitions/problem
+func regex_repetitions(str string) bool {
+	valid := regexp.MustCompile(`[a-zA-Z+]{40}[\s02468+]{5}$`)
+	return valid.MatchString(str)
+}

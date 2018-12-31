@@ -119,3 +119,39 @@ func Test_notspecific(t *testing.T) {
 		ast.Equal(tc.exp, regex_notspecific(tc.str), "diff:%v", tc)
 	}
 }
+
+var tcs8 = []struct {
+	str string
+	exp bool
+}{
+	{"a1AaA", true},
+	{"A1AaA", false},
+	{"aaAaA", false},
+	{"a1aaA", false},
+	{"a1AAA", false},
+	{"a1aAa", false},
+}
+
+func Test_range(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs8 {
+		ast.Equal(tc.exp, regex_range(tc.str), "diff:%v", tc)
+	}
+}
+
+var tcs9 = []struct {
+	str string
+	exp bool
+}{
+	{"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa24680", true},
+	{"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa24681", false},
+	{"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa24680", false},
+	{"1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa24680", false},
+}
+
+func Test_repetitions(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs9 {
+		ast.Equal(tc.exp, regex_repetitions(tc.str), "diff:%v", tc)
+	}
+}

@@ -244,5 +244,97 @@ func main() {
 }
 ```
 
-## graph (djacency matrix)
-## graph (incidence matrix)
+## graph (by slice)
+
+```go
+package main
+
+import "fmt"
+
+func addEdge(adj [][]int, u, v int) [][]int {
+	adj[u] = append(adj[u], v)
+	adj[v] = append(adj[v], u)
+	return adj
+}
+
+func printGraph(adj [][]int, V int) {
+	for v := 0; v < V; v++ {
+		fmt.Printf("adj of %+v is: ", v) // output for debug
+		for _, x := range adj[v] {
+			fmt.Printf("%+v ", x) // output for debug
+		}
+		fmt.Printf("\n") // output for debug
+	}
+}
+
+func main() {
+	/*
+	     3
+	     |
+	   2-1-4
+	     |
+	     5
+	*/
+	V := 5
+	adj := make([][]int, V+1)
+	addEdge(adj, 1, 2)
+	addEdge(adj, 1, 3)
+	addEdge(adj, 1, 4)
+	addEdge(adj, 1, 5)
+	printGraph(adj, V)
+}
+```
+
+
+## graph (adjacency matrix)
+
+```go
+package main
+
+import "fmt"
+
+func addEdge(adj [][]int, u, v int) [][]int {
+	adj[u][v] = 1
+	adj[v][u] = 1
+	return adj
+}
+
+func printGraph(adj [][]int, V int) {
+	fmt.Printf("   ") // output for debug
+	for v := 0; v < V; v++ {
+		fmt.Printf("%+v ", v) // output for debug
+	}
+	fmt.Printf("\n") // output for debug
+
+	for v := 0; v < V; v++ {
+		fmt.Printf("%+v: ", v) // output for debug
+		for i, x := range adj[v] {
+			if i == 0 {
+				continue
+			}
+			fmt.Printf("%+v ", x) // output for debug
+		}
+		fmt.Printf("\n") // output for debug
+	}
+}
+
+func main() {
+	/*
+	     3
+	     |
+	   2-1-4
+	     |
+	     5
+	*/
+	V := 5
+	adj := make([][]int, V+1)
+	for i := 0; i < V+1; i++ {
+		adj[i] = make([]int, V+1)
+	}
+	addEdge(adj, 1, 2)
+	addEdge(adj, 1, 3)
+	addEdge(adj, 1, 4)
+	addEdge(adj, 1, 5)
+	printGraph(adj, V)
+}
+```

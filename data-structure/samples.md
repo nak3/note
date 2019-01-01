@@ -338,3 +338,101 @@ func main() {
 	printGraph(adj, V)
 }
 ```
+## undirected graph
+
+```go
+package main
+
+import "fmt"
+
+type Graph struct {
+	n     int
+	edges [][]int
+}
+
+func (g *Graph) addEdge(u, v int) {
+	g.edges[u] = append(g.edges[u], v)
+	g.edges[v] = append(g.edges[v], u)
+}
+
+func (g *Graph) printGraph(V int) {
+	for v := 0; v < V; v++ {
+		fmt.Printf("from %+v to: ", v+1) // output for debug
+		for _, x := range g.edges[v] {
+			fmt.Printf("%+v ", x+1) // output for debug
+		}
+		fmt.Printf("\n") // output for debug
+	}
+}
+
+func NewGraph(n int) *Graph {
+	g := &Graph{
+		n:     n,
+		edges: make([][]int, n),
+	}
+	return g
+}
+
+func main() {
+	/*
+		             4
+		             |
+			   2-1-3
+	*/
+	V := 4
+	g := NewGraph(V)
+	g.addEdge(0, 1)
+	g.addEdge(0, 2)
+	g.addEdge(0, 3)
+	g.printGraph(V)
+}
+```
+
+## directed graph
+
+```go
+package main
+
+import "fmt"
+
+type Graph struct {
+	n     int
+	edges [][]int
+}
+
+func (g *Graph) addEdge(u, v int) {
+	g.edges[u] = append(g.edges[u], v)
+}
+
+func (g *Graph) printGraph(V int) {
+	for v := 0; v < V; v++ {
+		fmt.Printf("from %+v to: ", v) // output for debug
+		for _, x := range g.edges[v] {
+			fmt.Printf("%+v ", x) // output for debug
+		}
+		fmt.Printf("\n") // output for debug
+	}
+}
+
+func NewGraph(n int) *Graph {
+	g := &Graph{
+		n:     n,
+		edges: make([][]int, n),
+	}
+	return g
+}
+
+func main() {
+	/*
+		              4
+		              ^
+			   2<-1->3
+	*/
+	V := 4
+	g := NewGraph(V)
+	g.addEdge(1, 2)
+	g.addEdge(1, 3)
+	g.addEdge(1, 4)
+	g.printGraph(V)
+}
+```

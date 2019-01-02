@@ -5,3 +5,5 @@
 - [Sum of dependencies in a graph](https://practice.geeksforgeeks.org/problems/sum-of-dependencies-in-a-graph/0)
 - [max depth (Villain Con)](https://practice.geeksforgeeks.org/problems/villain-con/0)
 - [countPath (Count the paths)](https://practice.geeksforgeeks.org/problems/count-the-paths/0)
+- [graph BFS](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
+- [graph DFS](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)

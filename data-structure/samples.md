@@ -436,3 +436,53 @@ func main() {
 	g.printGraph(V)
 }
 ```
+
+## directed graph (by map)
+
+```go
+package main
+
+import "fmt"
+
+type Graph struct {
+	n     int
+	edges map[int][]int
+}
+
+func (g *Graph) addEdge(u, v int) {
+	g.edges[u] = append(g.edges[u], v)
+//	g.edges[v] = append(g.edges[v], u)
+}
+
+func (g *Graph) printGraph(V int) {
+	for k, v := range g.edges {
+		fmt.Printf("from %+v to: ", k) // output for debug
+		for i := 0; i < len(v); i++ {
+			fmt.Printf("%+v ", v[i]) // output for debug
+		}
+		fmt.Printf("\n") // output for debug
+	}
+}
+
+func NewGraph(n int) *Graph {
+	g := &Graph{
+		n:     n,
+		edges: map[int][]int{},
+	}
+	return g
+}
+
+func main() {
+	/*
+		             4
+		             |
+			   2-1-3
+	*/
+	V := 4
+	g := NewGraph(V)
+	g.addEdge(0, 1)
+	g.addEdge(0, 2)
+	g.addEdge(0, 3)
+	g.printGraph(V)
+}
+```

@@ -2,3 +2,5 @@
 - [regex](https://www.hackerrank.com/domains/regex)
 - [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 - [awk2](https://www.hackerrank.com/challenges/awk-2/problem)
+- [Sum of dependencies in a graph](https://practice.geeksforgeeks.org/problems/sum-of-dependencies-in-a-graph/0)
+- [max depth (Villain Con)](https://practice.geeksforgeeks.org/problems/villain-con/0)

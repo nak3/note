@@ -9,6 +9,7 @@
 
 - [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 - [Maximum difference between node and its ancestor](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1)
+- [Count Number of SubTrees having given Sum](https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1)
 
 ## Graph
 

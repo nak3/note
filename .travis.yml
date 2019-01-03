@@ -4,4 +4,5 @@ branches:
   - master
 go: 1.11.x
 script:
-- make -f practice/Makefile
+- make -f practice/Makefile lib
+- make -f practice/Makefile test

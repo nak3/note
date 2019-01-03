@@ -4,7 +4,7 @@ import (
 	//"fmt"
 	"testing"
 
-	"../../lib"
+	"github.com/nak3/note/lib"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,7 +1,9 @@
 package practice
 
 import (
-	"../../lib"
+	//	"../../lib"
+
+	"github.com/nak3/note/lib"
 )
 
 func constructMaximumBinaryTree(nums []int) *lib.Node {

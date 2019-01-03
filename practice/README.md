@@ -3,6 +3,7 @@
 - [atoi](https://practice.geeksforgeeks.org/problems/implement-atoi/1)
 - [regex](https://www.hackerrank.com/domains/regex)
 - [awk2](https://www.hackerrank.com/challenges/awk-2/problem)
+- [simple KMP](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 
 ## Tree
 

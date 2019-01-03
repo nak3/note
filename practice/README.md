@@ -7,3 +7,4 @@
 - [countPath (Count the paths)](https://practice.geeksforgeeks.org/problems/count-the-paths/0)
 - [graph BFS](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
 - [graph DFS](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
+- [Print adjacency list](https://practice.geeksforgeeks.org/problems/print-adjacency-list/0)

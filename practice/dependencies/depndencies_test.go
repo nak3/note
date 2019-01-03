@@ -15,7 +15,9 @@ var tcs = []struct {
 	edges  []int
 	exp    int
 }{
-	{4, 4, []int{0, 2, 0, 3, 1, 3, 2, 3}}, 4,
+	{
+		4, 4, []int{0, 2, 0, 3, 1, 3, 2, 3}, 4,
+	},
 }
 
 func Test_fn(t *testing.T) {

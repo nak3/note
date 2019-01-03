@@ -1,6 +1,6 @@
 package dependencies
 
-import "fmt"
+//import "fmt"
 
 type Graph struct {
 	n     int

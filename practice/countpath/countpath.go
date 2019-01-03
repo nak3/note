@@ -1,6 +1,6 @@
-package countPath
+package countpath
 
-import "fmt"
+//import "fmt"
 
 type Graph struct {
 	n     int

@@ -8,6 +8,7 @@
 ## Tree
 
 - [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+- [Maximum difference between node and its ancestor](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1)
 
 ## Graph
 

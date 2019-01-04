@@ -5,6 +5,11 @@
 - [awk2](https://www.hackerrank.com/challenges/awk-2/problem)
 - [simple KMP](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 
+## Search
+
+- [Smallest greater elements in whole array](https://practice.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array/0)
+- [Relative Sorting](https://practice.geeksforgeeks.org/problems/relative-sorting/0)
+
 ## DP
 
 - [Charul and vessels](https://practice.geeksforgeeks.org/problems/charul-and-vessels/0)

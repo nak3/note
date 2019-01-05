@@ -20,12 +20,17 @@ type Node struct {
 //        n := len(arr)
 //        ans := InsertLevelOrder(arr, root, i, n)
 //    }
+// NOTE: node -99999 is magic number. It inserts nil Node
 func InsertLevelOrder(arr []int, root *Node, i, n int) *Node {
 	if i < n {
 		tmp := &Node{Val: arr[i]}
-		root = tmp
-		root.Left = InsertLevelOrder(arr, root.Left, 2*i+1, n)
-		root.Right = InsertLevelOrder(arr, root.Right, 2*i+2, n)
+		if arr[i] == -99999 {
+			tmp = nil
+		} else {
+			root = tmp
+			root.Left = InsertLevelOrder(arr, root.Left, 2*i+1, n)
+			root.Right = InsertLevelOrder(arr, root.Right, 2*i+2, n)
+		}
 	}
 	return root
 }

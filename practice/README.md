@@ -20,6 +20,7 @@
 - [Maximum difference between node and its ancestor](https://practice.geeksforgeeks.org/problems/maximum-difference-between-node-and-its-ancestor/1)
 - [Count Number of SubTrees having given Sum](https://practice.geeksforgeeks.org/problems/count-number-of-subtrees-having-given-sum/1)
 - [Check for Balanced Tree](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1)
+- [Populate Inorder Successor for all nodes](https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1)
 
 ## Graph
 

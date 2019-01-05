@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	//	"github.com/nak3/note/lib"
 )
 
 var tcs = []struct {

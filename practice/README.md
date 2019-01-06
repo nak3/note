@@ -4,6 +4,7 @@
 - [regex](https://www.hackerrank.com/domains/regex)
 - [awk2](https://www.hackerrank.com/challenges/awk-2/problem)
 - [simple KMP](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
+- [Trie | (Insert and Search)](https://practice.geeksforgeeks.org/problems/trie-insert-and-search/0)
 
 ## Search
 

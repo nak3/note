@@ -5,6 +5,7 @@
 - [awk2](https://www.hackerrank.com/challenges/awk-2/problem)
 - [simple KMP](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 - [Trie | (Insert and Search)](https://practice.geeksforgeeks.org/problems/trie-insert-and-search/0)
+- [Trie | (Delete)](https://practice.geeksforgeeks.org/problems/trie-delete/1)
 
 ## Search
 
@@ -34,4 +35,4 @@
 - [Print adjacency list](https://practice.geeksforgeeks.org/problems/print-adjacency-list/0)
 - [Transitive closure of a Graph](https://practice.geeksforgeeks.org/problems/transitive-closure-of-a-graph/0)
 - [Flood fill Algorithm](https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0)
-- [https://practice.geeksforgeeks.org/problems/save-winterfell/0](https://practice.geeksforgeeks.org/problems/save-winterfell/0)
+- [Save Winterfell](https://practice.geeksforgeeks.org/problems/save-winterfell/0)

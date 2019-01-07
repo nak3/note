@@ -7,6 +7,10 @@
 - [Trie | (Insert and Search)](https://practice.geeksforgeeks.org/problems/trie-insert-and-search/0)
 - [Trie | (Delete)](https://practice.geeksforgeeks.org/problems/trie-delete/1)
 
+## Linked List
+
+[Remove every k'th node](https://practice.geeksforgeeks.org/problems/remove-every-kth-node/1)
+
 ## Search
 
 - [Smallest greater elements in whole array](https://practice.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array/0)
@@ -15,6 +19,7 @@
 ## DP
 
 - [Charul and vessels](https://practice.geeksforgeeks.org/problems/charul-and-vessels/0)
+- [Cutting Binary String](https://practice.geeksforgeeks.org/problems/cutting-binary-string/0)
 
 ## Tree
 

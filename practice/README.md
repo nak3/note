@@ -24,6 +24,7 @@
 - [Check for Balanced Tree](https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1)
 - [Populate Inorder Successor for all nodes](https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1)
 - [Vertical Width of a Binary Tree](https://practice.geeksforgeeks.org/problems/vertical-width-of-a-binary-tree/1)
+- [diameter-of-binary-tree](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1)
 
 ## Graph
 

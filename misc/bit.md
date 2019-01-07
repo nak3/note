@@ -44,3 +44,21 @@ func subsets(nums []int) [][]int {
 	return [][]int{}
 }
 ```
+
+## Hex from/to String
+
+```go
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+func main() {
+	fmt.Printf("%02x\n", 10)
+
+	x, _ := strconv.ParseInt("a", 16, 64)
+	fmt.Printf("%+v\n", x)
+}
+```

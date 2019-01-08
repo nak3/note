@@ -8,18 +8,25 @@ import (
 )
 
 var tcs = []struct {
-	base string
-	exp  int
+	base []int
+	key  int
+	exp  []int
 }{
 	{
-		"ABABDABACDABABCABAB",
-		10,
+		[]int{1, 2, 3, 4, 5, 6, 7, 8},
+		2,
+		[]int{1, 3, 5, 7},
 	},
 }
 
 func Test_fn(t *testing.T) {
 	ast := assert.New(t)
 	for _, tc := range tcs {
-		ast.Equal(tc.exp, TODO(tc.base), "diff:%v", tc)
+		// TODO: library
+		n := &Node{tc.base[0], nil}
+		for i := 1; i < len(tc.base); i++ {
+			n.insert(tc.base[i])
+		}
+		ast.Equal(tc.exp, n.solve(tc.key), "diff:%v", tc)
 	}
 }

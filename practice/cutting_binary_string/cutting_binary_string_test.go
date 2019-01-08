@@ -12,14 +12,22 @@ var tcs = []struct {
 	exp  int
 }{
 	{
-		"ABABDABACDABABCABAB",
-		10,
+		"101101101",
+		3,
+	},
+	{
+		"101101",
+		2,
+	},
+	{
+		"1",
+		-1,
 	},
 }
 
 func Test_fn(t *testing.T) {
 	ast := assert.New(t)
 	for _, tc := range tcs {
-		ast.Equal(tc.exp, TODO(tc.base), "diff:%v", tc)
+		ast.Equal(tc.exp, solve(tc.base), "diff:%v", tc)
 	}
 }

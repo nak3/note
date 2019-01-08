@@ -58,5 +58,4 @@ func main() {
 	}
 	fmt.Printf("%+v\n", n.solve(key))
 	fmt.Printf("end\n") // output for debug
-
 }

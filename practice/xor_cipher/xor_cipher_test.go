@@ -1,4 +1,4 @@
-package REPLACE
+package xor_cipher
 
 import (
 	"testing"
@@ -9,11 +9,15 @@ import (
 
 var tcs = []struct {
 	base string
-	exp  int
+	exp  string
 }{
 	{
-		"ABABDABACDABABCABAB",
-		10,
+		"A1D0A1D",
+		"abcd",
+	},
+	{
+		"653CAE8DA8EDB426052",
+		"636f646572",
 	},
 }
 

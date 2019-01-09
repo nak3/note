@@ -1,3 +1,11 @@
+## Bit
+
+- [XOR Cipher](https://practice.geeksforgeeks.org/problems/xor-cipher/0)
+
+## Greedy
+
+- [Minimum Platforms](https://practice.geeksforgeeks.org/problems/minimum-platforms/0)
+
 ## String
 
 - [atoi](https://practice.geeksforgeeks.org/problems/implement-atoi/1)

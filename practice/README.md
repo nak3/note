@@ -23,6 +23,7 @@
 
 - [Smallest greater elements in whole array](https://practice.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array/0)
 - [Relative Sorting](https://practice.geeksforgeeks.org/problems/relative-sorting/0)
+- [Equalize the Towers](https://practice.geeksforgeeks.org/problems/equalize-the-towers/0)
 
 ## DP
 

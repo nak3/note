@@ -24,6 +24,8 @@
 - [Smallest greater elements in whole array](https://practice.geeksforgeeks.org/problems/smallest-greater-elements-in-whole-array/0)
 - [Relative Sorting](https://practice.geeksforgeeks.org/problems/relative-sorting/0)
 - [Equalize the Towers](https://practice.geeksforgeeks.org/problems/equalize-the-towers/0)
+- [Find the closest prime number to a given number](https://practice.geeksforgeeks.org/problems/find-the-closest-prime-number-to-a-given-number/0)
+- [Array Subset of another array](https://practice.geeksforgeeks.org/problems/array-subset-of-another-array/0)
 
 ## DP
 

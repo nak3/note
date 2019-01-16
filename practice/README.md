@@ -15,9 +15,14 @@
 - [Trie | (Insert and Search)](https://practice.geeksforgeeks.org/problems/trie-insert-and-search/0)
 - [Trie | (Delete)](https://practice.geeksforgeeks.org/problems/trie-delete/1)
 
+## Sort
+
+- [Triplet Sum in Array](https://practice.geeksforgeeks.org/problems/triplet-sum-in-array/0)
+- [Selection Sort](https://practice.geeksforgeeks.org/problems/selection-sort/1)
+
 ## Linked List
 
-[Remove every k'th node](https://practice.geeksforgeeks.org/problems/remove-every-kth-node/1)
+- [Remove every k'th node](https://practice.geeksforgeeks.org/problems/remove-every-kth-node/1)
 
 ## Search
 

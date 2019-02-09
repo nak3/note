@@ -58,3 +58,7 @@
 - [Transitive closure of a Graph](https://practice.geeksforgeeks.org/problems/transitive-closure-of-a-graph/0)
 - [Flood fill Algorithm](https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0)
 - [Save Winterfell](https://practice.geeksforgeeks.org/problems/save-winterfell/0)
+
+## Union Find (Disjoint Set)
+
+- [Set - Disjoint Set: Union Find Tree](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A)

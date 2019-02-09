@@ -62,3 +62,4 @@
 ## Union Find (Disjoint Set)
 
 - [Set - Disjoint Set: Union Find Tree](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A)
+- [Set - Weighted Union Find Trees](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_B)

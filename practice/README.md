@@ -63,3 +63,6 @@
 
 - [Set - Disjoint Set: Union Find Tree](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A)
 - [Set - Weighted Union Find Trees](http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_B)
+
+## Range Query
+- [Range Minimum Query (RMQ)](https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A)

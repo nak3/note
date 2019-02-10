@@ -17,8 +17,9 @@ func pow(m, n, mod int) int {
 }
 
 // Verified by https://onlinejudge.u-aizu.ac.jp/courses/library/6/NTL/1/NTL_1_B
-
+/*
 func main() {
 	m, n, mod := 2, 10, 1000000007
 	fmt.Printf("%+v\n", pow(m, n, mod)) // output for debug
 }
+*/

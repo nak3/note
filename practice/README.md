@@ -59,6 +59,7 @@
 - [Flood fill Algorithm](https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0)
 - [Save Winterfell](https://practice.geeksforgeeks.org/problems/save-winterfell/0)
 - [All Pairs Shortest Path (warshall floyd)](https://onlinejudge.u-aizu.ac.jp/problems/GRL_1_C)
+- [Single Source Shortest Path (dijkstra)](https://onlinejudge.u-aizu.ac.jp/problems/GRL_1_A)
 
 ## Union Find (Disjoint Set)
 

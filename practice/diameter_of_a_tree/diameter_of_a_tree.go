@@ -52,6 +52,7 @@ func solve(n int, data [][]int) int {
 	t.done = make(map[int]bool)
 	t.dfs(0, 0)
 	t.done = make(map[int]bool)
+	t.mxDistance = 0
 	start := t.mxNode
 	t.dfs(start, 0)
 	return t.mxDistance

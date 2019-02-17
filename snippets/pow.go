@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+//	"fmt"
 )
 
 func pow(m, n, mod int) int {

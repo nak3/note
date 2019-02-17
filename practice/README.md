@@ -46,6 +46,7 @@
 - [Populate Inorder Successor for all nodes](https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1)
 - [Vertical Width of a Binary Tree](https://practice.geeksforgeeks.org/problems/vertical-width-of-a-binary-tree/1)
 - [diameter-of-binary-tree](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1)
+- [Diameter of a Tree](https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/5/GRL_5_A)
 
 ## Graph
 

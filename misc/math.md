@@ -121,3 +121,15 @@ it is also same with:
 TODO
 
 Example: https://atcoder.jp/contests/abc110/tasks/abc110_d
+
+## rotation matrix
+
+[wiki: rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix)
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0166e674df67cf24314537211848adec91813945" />
+
+This rotates column vectors by means of the following matrix multiplication.
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50622f9a4a7ba2961f5df5f7e0882983cf2f1d2f" />
+
+Example: https://atcoder.jp/contests/abc108/tasks/abc108_b?lang=en

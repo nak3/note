@@ -46,3 +46,25 @@ This picture is from [wikipedia](https://en.wikipedia.org/wiki/Transmission_Cont
 - Window scaling ... window scaling uses windows size. Windows size lets the peer know the data size how much the peer can send wihtout ACK.
 
 ## SSL
+
+TODO
+
+## HTTP basic
+
+- HTTP methods
+  - GET, POST, PUT, PATCH, DELETE, CONNECT, OPTIONS, TRACE
+
+- HTTP status codes
+  - 1xx informational
+  - 2xx success
+  - 3xx redirection
+  - 4xx client error
+  - 5xx server error
+
+###  HTTP Header
+
+- Request Header 
+  - e.g. Host, User-Agent, Accept, Cookie, Referer, Keep-Alive
+
+- Response Header 
+  - e.g. Content-Type, Cache-Control, Content-Encoding, Server

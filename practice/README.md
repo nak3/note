@@ -36,6 +36,7 @@
 
 - [Charul and vessels](https://practice.geeksforgeeks.org/problems/charul-and-vessels/0)
 - [Cutting Binary String](https://practice.geeksforgeeks.org/problems/cutting-binary-string/0)
+- [Paths to reach origin](https://practice.geeksforgeeks.org/problems/paths-to-reach-origin/0)
 
 ## Tree
 

@@ -6,6 +6,10 @@
 
 - [Minimum Platforms](https://practice.geeksforgeeks.org/problems/minimum-platforms/0)
 
+## Recursion
+
+- [Josephus problem](https://practice.geeksforgeeks.org/problems/josephus-problem/1)
+
 ## String
 
 - [atoi](https://practice.geeksforgeeks.org/problems/implement-atoi/1)

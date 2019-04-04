@@ -6,6 +6,11 @@
 
 - [Minimum Platforms](https://practice.geeksforgeeks.org/problems/minimum-platforms/0)
 
+## Stack
+
+- [Reverse First K elements of Queue](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1)
+- [Count the Reversals](https://practice.geeksforgeeks.org/problems/count-the-reversals/0)
+
 ## Recursion
 
 - [Josephus problem](https://practice.geeksforgeeks.org/problems/josephus-problem/1)

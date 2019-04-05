@@ -57,6 +57,7 @@
 - [Vertical Width of a Binary Tree](https://practice.geeksforgeeks.org/problems/vertical-width-of-a-binary-tree/1)
 - [diameter-of-binary-tree](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1)
 - [Diameter of a Tree](https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/5/GRL_5_A)
+- [Print Left View of a Binary Tree](https://www.geeksforgeeks.org/print-left-view-binary-tree/)
 
 ## Graph
 
